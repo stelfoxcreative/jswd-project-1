@@ -30,7 +30,7 @@ var quotes = [{
 {
   quote: 'A delayed game is eventually good, a bad game is bad forever',
   source: 'Shigeru Miyamoto',
-  year: 2001,
+  date: 2001,
   tag: 'gaming'
 },
 {
@@ -42,7 +42,7 @@ var quotes = [{
   quote: 'The time is always right to do what is right',
   source: 'Martin Luther King Jr.',
   citation: 'Oberlin College Commencement speech',
-  year: 1965,
+  date: 1965,
   tag: 'inspire'
 }
 ];
@@ -69,8 +69,8 @@ function printQuote() {
     if (newQuote.citation && newQuote.citation !== '') {
       HTML += '<span class="citation">' + newQuote.citation + '</span>'
     }
-    if (newQuote.year && newQuote.year !== '') {
-      HTML += '<span class="year">' + newQuote.year + '</span>'
+    if (newQuote.date && newQuote.date !== '') {
+      HTML += '<span class="year">' + newQuote.date + '</span>'
     }
     // close the source HTML string
     HTML += '</p>'
